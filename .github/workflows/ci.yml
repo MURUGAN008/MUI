@@ -9,25 +9,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: show environment
+      - name: Show environment
         run: |
           uname -a
           docker --version
-          docker-compose --version
+          docker compose version
 
-      - name: Build docker image
-        run: docker-compose build
+      - name: Build Docker images
+        run: docker compose build
 
-      - name: start containers
-        run: docker-compose up -d
+      - name: Start containers
+        run: docker compose up -d
 
-      - name: show running containers
+      - name: Show running containers
         run: docker ps
 
-      - name: stop containers
-        run: docker-compose down
-
+      - name: Stop containers
+        run: docker compose down
