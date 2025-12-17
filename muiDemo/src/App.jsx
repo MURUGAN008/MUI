@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import './App.css'
 import Stack from '@mui/material/Stack'
-import HoverCard from '../styles/hoverCard'
+import HoverCard from '../styles/HoverCard'
 import { useTheme } from '@mui/material/styles'
 import DataGridModel from '../Pages/DataGridModel'
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <HoverCard>
         <Typography variant='h3'>Hello, World!</Typography>
       </HoverCard>
-        <DataGridModel></DataGridModel>
+      <DataGridModel></DataGridModel>
     </>
   )
 }
